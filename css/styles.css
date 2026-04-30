@@ -1,12 +1,12 @@
 :root {
-    --primary_color: #002E5D;
+    --primary_color: #0058A4;
     --secondary_color: #fafafa;
-    --tertiary_color: #3d8bad;
+    --tertiary_color: #7BA4DB;
     --accent_color: SeaGreen;
-    --clash_color: #ed8e00;
-    --text_color: Black;
-    --subtle_text_color: #303030;
-    --subtle_background_color: #f5f8fc;
+    --clash_color: #FDDA24;
+    --text_color: #2C2A29;
+    --subtle_text_color: #757575;
+    --subtle_background_color: #E5E5E5;
   }
 
 body {
