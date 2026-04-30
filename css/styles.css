@@ -98,6 +98,12 @@ h3 {
     padding-bottom: 2pt;
 }
 
+.home img {
+    height: 50px; /* Adjust height as needed */
+    width: auto;   /* Maintains the aspect ratio */
+    display: block;
+}
+
 .topnav .menuitems {
     display: flex;
 }
@@ -226,3 +232,38 @@ div.abstract {
     margin: 10pt 0pt;
     font-size: 11pt;
 }
+
+/* People */
+/* Grid and Layout Extensions */
+.people-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.person-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.person-img {
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.role-label {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--tertiary_color);
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+/* Sizing Logic */
+.faculty-block { margin-bottom: 50px; }
+.faculty-size .person-img { width: 150px; height: 150px; }
+.grad-size .person-img { width: 110px; height: 110px; }
