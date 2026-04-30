@@ -99,9 +99,10 @@ h3 {
 }
 
 .home img {
-    height: 60px; /* Adjust height as needed */
-    width: auto;   /* Maintains the aspect ratio */
+    height: 50px; /* Adjust height as needed */
+    width: auto;
     display: block;
+    padding-bottom: 2pt;
 }
 
 .topnav .menuitems {
@@ -152,6 +153,7 @@ ul.qlnk {
     margin: auto;
     overflow: hidden;
     justify-content: center;
+    align-items: center;
 }
 
 li.qlnk {
@@ -160,15 +162,19 @@ li.qlnk {
 
 li.qlnk a {
     color: var(--primary_color);
-    display: block;
     text-decoration: none;
     font-weight: bold;
     text-align: center;
-    padding: calc(8px + 1.5625vw);
+    padding: 2pt calc(8px + 1.5625vw);
 }
 
 li.qlnk a:hover {
     color: var(--tertiary_color);
+}
+
+.qlnk img {
+    height: 50px;
+    width: auto;
 }
 
 /* Projects*/
