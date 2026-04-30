@@ -1,8 +1,9 @@
 :root {
     --primary_color: #0058A4;
     --secondary_color: #fafafa;
-    --tertiary_color: #7BA4DB;
+    --tertiary_color: #002D72;
     --accent_color: SeaGreen;
+    --accent_color2: #7BA4DB;
     --clash_color: #FDDA24;
     --text_color: #2C2A29;
     --subtle_text_color: #757575;
@@ -35,14 +36,14 @@ body {
 
 button:hover {
     cursor: pointer;
-    color: var(--tertiary_color);
+    color: var(--accent_color2);
 }
 a {
     color: var(--accent_color);
     text-decoration: none;
 }
 a:hover {
-    color: var(--tertiary_color);
+    color: var(--accent_color2);
     cursor: pointer;
 }
 
@@ -169,7 +170,7 @@ li.qlnk a {
 }
 
 li.qlnk a:hover {
-    color: var(--tertiary_color);
+    color: var(--accent_color2);
 }
 
 .qlnk img {
@@ -263,10 +264,10 @@ div.abstract {
 .role-label {
     font-size: 0.85rem;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.4px;
     color: var(--tertiary_color);
     font-weight: bold;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
 }
 
 /* Sizing Logic */
