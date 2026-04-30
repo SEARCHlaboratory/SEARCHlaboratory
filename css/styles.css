@@ -8,6 +8,7 @@
     --text_color: #2C2A29;
     --subtle_text_color: #757575;
     --subtle_background_color: #E5E5E5;
+    --content_width: 900px;
   }
 
 body {
@@ -26,7 +27,7 @@ body {
 }
 .content {
   background: white;
-  max-width: 900px;  /* adjust to taste */
+  max-width: var(--content_width);  /* adjust to taste */
   margin: 2rem auto; /* center it */
   margin-top: 0; 
   padding: 2rem;
@@ -148,17 +149,34 @@ h3 {
 }
 
 /* Quick Links */
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    max-width: var(--content_width);
+    margin: 0 auto;
+    width: 90%; 
+}
+
+.footer-logo img {
+    height: 80px;
+    width: auto;
+}
+
+.footer-logo p {
+    font-size: 0.85rem;      /* Slightly smaller than main text */
+    color: var(--subtle_text_color);             /* A muted gray color */
+    margin-top: 8px;         /* Space between logo and text */
+    line-height: 1.4;        /* Better readability if it wraps to two lines */
+}
+
 ul.qlnk {
     display: flex;
     list-style-type: none;
-    margin: auto;
+    /* margin: auto; */
     overflow: hidden;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-}
-
-li.qlnk {
-    float: left;
 }
 
 li.qlnk a {
