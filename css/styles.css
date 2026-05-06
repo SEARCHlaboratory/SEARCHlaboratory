@@ -153,9 +153,10 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: flex-start; 
-    max-width: var(--content_width);
-    margin: 0 auto;
-    width: 90%; 
+    max-width: calc(var(--content_width) + 4rem);
+    margin: 0rem auto;
+    width: 100%;
+    /* padding: 0rem 2rem 0 2rem; */
 }
 
 .footer-logo img {
@@ -184,7 +185,8 @@ li.qlnk a {
     text-decoration: none;
     font-weight: bold;
     text-align: center;
-    padding: 2pt calc(8px + 1.5625vw);
+    padding: 2pt 0pt 2pt 24pt;
+    /* padding: 2pt calc(8px + 1.5625vw) 0pt 0pt; */
 }
 
 li.qlnk a:hover {
@@ -192,7 +194,7 @@ li.qlnk a:hover {
 }
 
 .qlnk img {
-    height: 50px;
+    height: 40px;
     width: auto;
 }
 
