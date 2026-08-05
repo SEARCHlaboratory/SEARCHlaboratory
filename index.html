@@ -29,13 +29,75 @@
         </a>
     </div>
     <main class="content">
-<h1>Systems Engineering Applied Research (SEARCH) Lab</h1>
-
-<p>Welcome to the official page of the SEARCH Lab at The University of Alabama in Huntsville.</p>
-
 <div style="display: flex; justify-content: center;">
-    <img src="../assets/images/logos/primary-logo.png" alt="SEARCH Lab logo" width="400" style="padding:40px; padding-bottom:40px">
-</div></main>
+    <img src="./assets/images/logos/primary-logo.png" alt="SEARCH Lab logo" width="400" style="padding:40px; padding-bottom:40px">
+</div>
+
+<section class="blog-header">
+    <p>
+        This is the official page for the Systems Engineering Applied Research (SEARCH) Lab. 
+        We're a group of researchers focused on understanding how simple things come together to make incredible systems.
+    </p>
+</section>
+
+<h1 style="text-align: center;">Research Focuses</h1>
+
+<!-- TOPIC CARDS -->
+<div class="grid-container">
+    <!-- Row 1 -->
+    <div class="card" id="card-1" onclick="toggleDetails('card-1', 'panel-1')">
+      <div style="height: 180px;  display: block; margin-left: auto; margin-right: auto;">         <img src="./assets/images/topics/pbfDT.png" alt="Image of Digital Twins" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>      <h3>Digital Twins</h3>
+    </div>
+    <div class="card" id="card-2" onclick="toggleDetails('card-2', 'panel-2')">
+      <div style="height: 180px;  display: block; margin-left: auto; margin-right: auto;">         <img src="./assets/images/topics/chg.png" alt="Image of Constraint Hypergraphs" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>      <h3>Constraint Hypergraphs</h3>
+    </div>
+    <div class="card" id="card-3" onclick="toggleDetails('card-3', 'panel-3')">
+      <div style="height: 180px;  display: block; margin-left: auto; margin-right: auto;">         <img src="./assets/images/topics/models.png" alt="Image of Model-Based Enterprises" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>      <h3>Model-Based Enterprises</h3>
+    </div>
+
+    <!-- Expansion Panel Row 1 -->
+    <div id="panel-1" class="expansion-panel">
+      <p>Digital twins are virtual recreations of real systems. An ideal twin represents all the information we know about some entity, such as a machine, organization, or process. By challenging how that information is represented, we can create intelligent, robust representations of the physical world.</p>
+    </div>
+    <div id="panel-2" class="expansion-panel">
+      <p>Constraint hypergraphs are a mathematical construct that breaks a system into is base behaviors. They can be used to integrate knowledge holistically for a system--because everything, at is most primitive, can be represented as a system behavior. The SEARCH Lab pioneers the use of constraint hypergraphs for system modeling.</p>
+    </div>
+    <div id="panel-3" class="expansion-panel">
+      <p>Organizations live or die on how they handle information. Models are ways of capturing the relationships between data, and model-based enterprises are those organizations that understand the interconnections between their employees, their products, their processes, and everything in between. We provide actual tools for capturing these relationships in flexible ways that preserve meaning--and also enables more accurate and predictable AI.</p>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="card" id="card-4" onclick="toggleDetails('card-4', 'panel-4')">
+      <div style="height: 180px;  display: block; margin-left: auto; margin-right: auto;">         <img src="./assets/images/topics/VisualCHGdemo.png" alt="Image of Digital Engineering" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>      <h3>Digital Engineering</h3>
+    </div>
+    <div class="card" id="card-5" onclick="toggleDetails('card-5', 'panel-5')">
+      <div style="height: 180px;  display: block; margin-left: auto; margin-right: auto;">         <img src="./assets/images/topics/dtaggregate.png" alt="Image of System Aggregation" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>      <h3>System Aggregation</h3>
+    </div>
+    <div class="card" id="card-6" onclick="toggleDetails('card-6', 'panel-6')">
+      <div style="height: 180px;  display: block; margin-left: auto; margin-right: auto;">         <img src="./assets/images/topics/BFSvisualization.gif" alt="Image of Simulation Networks" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>      <h3>Simulation Networks</h3>
+    </div>
+
+    <!-- Expansion Panel Row 2 -->
+    <div id="panel-4" class="expansion-panel">
+      <p>Engineering is configuring the systems around us to behave a certain way. But the work of understanding that behavior can be just as difficult as actually building a machine. The SEARCH Lab explores how constraints, dynamic behavior, requirements, and realized products can be intertwined into useable tools for engineers.</p>
+    </div>
+    <div id="panel-5" class="expansion-panel">
+      <p>Putting things together is the soul of systems engineering. But how can we model the emergent behaviors that occur when systems form? If you have models of a bird, the wind, and the local terrain, can you be certain that the combination of these models will predict where the bird will fly to? Using constraint hypergraphs and ontological reasoners, the SEARCH Lab has discovered new ways to combine systems to identify how those systems will interact. There are applications to everything, from digital threads to acquisition to complex system design.</p>
+    </div>
+    <div id="panel-6" class="expansion-panel">
+      <p>If Alice knows that it's raining, and Bob knows that the office window is open, together they know that they need to shut the window. But just knowing these facts doesn't lead to action. A simulation network is all the different things that can be inferred from a set of observations. By using constraint hypergraphs to model system facts and relations, the SEARCH Lab can create minimalistic networks that capture all possible simulations--or inferences. This breaks down silos, allowing Alice, Bob, AI, and the entire organization to bring together their combined intelligence into a single source of truth.</p>
+    </div>
+</div>
+<!-- END TOPIC CARDS -->
+
+
+<div </main>
 
     <footer class="footer-wrapper">
         <div class="footer-logo">

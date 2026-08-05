@@ -39,3 +39,28 @@ function checkMenuResponsive() {
     x.className = "topnav";
   }
 }
+
+/**
+ * Handles full-row expansion for grid-based blog cards.
+ */
+function toggleDetails(cardId, targetId) {
+  const currentCard = document.getElementById(cardId)
+  const targetPanel = document.getElementById(targetId);
+  const panelCurrentlyOpen = targetPanel.classList.contains('active');
+  const cardCurrentlyOpen = targetPanel.classList.contains('active');
+
+  // Close all open panels first
+  document.querySelectorAll('.expansion-panel').forEach(panel => {
+    panel.classList.remove('active');
+  });
+
+  document.querySelectorAll('.card').forEach(card => {
+    card.classList.remove('active');
+  });
+
+  // Toggle the clicked card/panel if it wasn't already opened
+  if (!panelCurrentlyOpen) {
+    targetPanel.classList.add('active');
+    currentCard.classList.add('active');
+  }
+}

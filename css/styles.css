@@ -290,7 +290,93 @@ div.abstract {
     margin-bottom: 2px;
 }
 
+
 /* Sizing Logic */
 .faculty-block { margin-bottom: 50px; }
 .faculty-size .person-img { width: 150px; height: 150px; }
 .grad-size .person-img { width: 110px; height: 110px; }
+
+
+/* Blog Cards */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  max-width: 900px;
+  margin: 20px auto;
+  font-family: sans-serif;
+}
+
+/* Fall back to 1 column on screens smaller than 768px
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+} */
+
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #fff;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card.active {
+  border-color: var(--tertiary_color);
+  position: relative;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); */
+}
+
+/* Downward indicator arrow pointing to the row panel below */
+.card.active::after {
+  content: '';
+  position: absolute;
+  bottom: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #222;
+  z-index: 2;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 12px 0 4px;
+  font-size: 1.1rem;
+}
+
+.card.active h3 {
+  color: var(--tertiary_color);
+}
+
+.expansion-panel {
+  display: none;
+  grid-column: 1 / -1; /* Forces the panel to span all 3 grid columns */
+  /* border: 1px solid #ccc; */
+  /* border-radius: 8px; */
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.expansion-panel.active {
+  display: block;
+}
