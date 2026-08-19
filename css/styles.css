@@ -213,6 +213,30 @@ p.sub {
     margin-bottom: 0px;
     font-style: italic;
 }
+.research-resource {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+.research-resource p {
+  margin-top: 0px;
+}
+.pdf-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+.pdf-link img {
+  width: 180px;
+  height: auto;
+}
+.pdf-link figcaption {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
 .label {
     color: var(--secondary_color);
     margin: 4px 8px;
@@ -295,6 +319,17 @@ div.abstract {
 .faculty-block { margin-bottom: 50px; }
 .faculty-size .person-img { width: 150px; height: 150px; }
 .grad-size .person-img { width: 110px; height: 110px; }
+
+@media (max-width: 768px) {
+  .research-resource {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .pdf-link {
+    justify-content: flex-start;
+  }
+}
 
 
 /* Blog Cards */
